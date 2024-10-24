@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - UX/UI Designer & Front End Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/chuD.jpg" alt="Your Logo">  
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openTab(event, 'about')">about</a></li>
+                <li><a href="#" onclick="openTab(event, 'featured')">featured</a></li>
+                <li><a href="#" onclick="openTab(event, 'portfolio')">portfolio</a></li>
+                <li><a href="#" onclick="openTab(event, 'blog')">blog</a></li>
+                <li><a href="#" onclick="openTab(event, 'contact')">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hiển thị mặc định tab About -->
+    <section id="about" class="tab-content" style="display: block;">
+        <h1>Welcome back, Nguyen Van Do </h1>
+        <p>I'm a UX/UI Designer and Front End Developer from [Your Location].</p>
+        <p>I enjoy turning complex problems into simple, beautiful, and intuitive interface designs.</p>
+        <p>When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100016040173290&mibextid=ZbWKwL" class="social-icon"><img src="./img/fb.jpg" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@do19032005?_t=8qnmm4g6yfv&_r=1" class="social-icon"><img src="./img/tt.png" alt="TikTok"></a>
+            <a href="https://www.instagram.com/vando.1903?igsh=MXF2YjVvdHVqbmcyag==" class="social-icon"><img src="./img/ig.jpg" alt="Instagram"></a>
+            <a href="https://locket.cam/doris19" class="social-icon"><img src="./img/lk.png" alt="Locket"></a>
+            <a href=" https://www.threads.net/@vando.1903?invite=0" class="social-icon"><img src="./img/thr.png" alt="Threads"></a>
+            <a href=" https://mobile.capcutshare.com/s/Zs8BEvVED/" class="social-icon"><img src="./img/cc.png" alt="CapCut"></a>
+            <a href=" https://Zalo.me/0369750881" class="social-icon"><img src="./img/zl.jpg" alt="Zalo"></a>
+
+        
+        </div>
+    </section>
+
+    <!-- Các tab khác mặc định ẩn -->
+    <section id="featured" class="tab-content" style="display: none;">
+        <h2>Featured Work</h2>
+        <div class="portfolio-grid">
+           <a href="#"> 
+               <div class="featured-item">
+                   <span>Lab1</span>
+                   <img src="./img/ht2.jpg" alt="Work 1" class="portfolio-item">
+               </div>
+           </a>
+           <a href="#"> 
+               <div class="featured-item">
+                   <span>Lab2</span>
+                   <img src="./img/ht3.jpg" alt="Work 2" class="portfolio-item">
+               </div>
+           </a>
+           <a href="#"> 
+               <div class="featured-item">
+                   <span>Lab3</span>
+                   <img src="./img/ht4.jpg" alt="Work 3" class="portfolio-item">
+               </div>
+           </a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="tab-content" style="display: none;">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <!-- Thêm các tác phẩm khác ở đây -->
+        </div>
+    </section>
+
+    <section id="blog" class="tab-content" style="display: none;">
+        <h2>Blog</h2>
+        <p>Here you can find my latest blog posts and articles...</p>
+    </section>
+
+    <section id="contact" class="tab-content" style="display: none;">
+        <h2>Contact Me</h2>
+        <p>Get in touch with me via email at: nguyenvando1932005@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nguyen Van Do </p>
+    </footer>
+
+    <script>
+        function openTab(event, tabName) {
+            var i, tabcontent, tablinks;
+            
+            // Ẩn tất cả nội dung tab
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Hiện tab được chọn
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
