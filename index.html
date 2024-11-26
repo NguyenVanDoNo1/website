@@ -14,11 +14,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#" onclick="openTab(event, 'about')">about</a></li>
-                <li><a href="#" onclick="openTab(event, 'featured')">featured</a></li>
-                <li><a href="#" onclick="openTab(event, 'portfolio')">portfolio</a></li>
-                <li><a href="#" onclick="openTab(event, 'blog')">blog</a></li>
-                <li><a href="#" onclick="openTab(event, 'contact')">contact</a></li>
+                <li><a href="#" onclick="openTab(event, 'about')">About</a></li>
+                <li><a href="#" onclick="openTab(event, 'featured')">Portfolio</a></li>
+                <li><a href="#" onclick="openTab(event, 'blog')">Blog</a></li>
+                <li><a href="#" onclick="openTab(event, 'contact')">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -37,51 +36,84 @@
             <a href=" https://www.threads.net/@vando.1903?invite=0" class="social-icon"><img src="./img/thr.png" alt="Threads"></a>
             <a href=" https://mobile.capcutshare.com/s/Zs8BEvVED/" class="social-icon"><img src="./img/cc.png" alt="CapCut"></a>
             <a href=" https://Zalo.me/0369750881" class="social-icon"><img src="./img/zl.jpg" alt="Zalo"></a>
-
-        
         </div>
     </section>
 
     <!-- Các tab khác mặc định ẩn -->
     <section id="featured" class="tab-content" style="display: none;">
-        <h2>Featured Work</h2>
+        <h2>Portfolio</h2>
+        <p>Explore my recent projects and case studies. Click on each project to view details:</p>
         <div class="portfolio-grid">
-           <a href="#"> 
+           <a href="https://nguyenvandono1.github.io/Login/"> 
                <div class="featured-item">
-                   <span>Lab1</span>
+                   <span>Lab2</span>
                    <img src="./img/ht2.jpg" alt="Work 1" class="portfolio-item">
                </div>
            </a>
-           <a href="#"> 
+           <a href="https://nguyenvandono1.github.io/Lab3/"> 
                <div class="featured-item">
-                   <span>Lab2</span>
+                   <span>Lab3</span>
                    <img src="./img/ht3.jpg" alt="Work 2" class="portfolio-item">
                </div>
            </a>
-           <a href="#"> 
+           <a href="https://nguyenvandono1.github.io/lab4_23130063_NguyenVanDo/"> 
                <div class="featured-item">
-                   <span>Lab3</span>
+                   <span>Lab4</span>
                    <img src="./img/ht4.jpg" alt="Work 3" class="portfolio-item">
                </div>
            </a>
-        </div>
-    </section>
-
-    <section id="portfolio" class="tab-content" style="display: none;">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <!-- Thêm các tác phẩm khác ở đây -->
+           <a href="https://nguyenvandono1.github.io/Lab5/"> 
+            <div class="featured-item">
+                <span>Lab5</span>
+                <img src="./img/ht5.jpg" alt="Work 3" class="portfolio-item">
+            </div>
+        </a>
+        <a href="https://nguyenvandono1.github.io/Lab6/"> 
+            <div class="featured-item">
+                <span>Lab6</span>
+                <img src="./img/ht6.jpg" alt="Work 3" class="portfolio-item">
+            </div>
+        </a>
         </div>
     </section>
 
     <section id="blog" class="tab-content" style="display: none;">
         <h2>Blog</h2>
-        <p>Here you can find my latest blog posts and articles...</p>
+        <p>Here are some of my recent thoughts and ideas in web design and development:</p>
+        <div class="blog-list">
+            <article class="blog-post">
+                <img src="./img/ux.jpg" alt="UX Design" class="blog-post-img">
+                <h3><a href="#">How to create intuitive, user-centric designs.</a></h3>
+                <p>Designing with the user in mind is crucial. This post covers the key principles of creating an intuitive interface.</p>
+            </article>
+            <article class="blog-post">
+                <img src="./img/ux1.png" alt="Emerging Trends" class="blog-post-img">
+                <h3><a href="#">Emerging trends and technologies to watch.</a></h3>
+                <p>Stay ahead of the curve by exploring the latest trends in web design and development.</p>
+            </article>
+            <article class="blog-post">
+                <img src="./img/ux2.jpg" alt="Personal Insights" class="blog-post-img">
+                <h3><a href="#">Personal insights and challenges as a developer.</a></h3>
+                <p>As a developer, I face many challenges. Here are some personal experiences and lessons learned.</p>
+            </article>
+        </div>
     </section>
 
     <section id="contact" class="tab-content" style="display: none;">
         <h2>Contact Me</h2>
-        <p>Get in touch with me via email at: nguyenvando1932005@gmail.com</p>
+        <p>If you'd like to get in touch, please use the form below or email me directly at: <a href="mailto:nguyenvando1932005@gmail.com">nguyenvando1932005@gmail.com</a></p>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
